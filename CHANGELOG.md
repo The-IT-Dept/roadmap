@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.10](https://github.com/The-IT-Dept/roadmap/compare/v0.0.9...v0.0.10) (2024-05-26)
+
+
+### Bug Fixes
+
+* items edit page ([1cfe9e1](https://github.com/The-IT-Dept/roadmap/commit/1cfe9e12134dc673b14b00d6e439c885e6d87a0c))
+
 ## [0.0.9](https://github.com/The-IT-Dept/roadmap/compare/v0.0.8...v0.0.9) (2024-05-26)
 
 
