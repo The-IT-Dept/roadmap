@@ -26,7 +26,7 @@ return [
 
     'enabled' => env('GITHUB_ENABLED', false),
 
-    'default' => 'main',
+    'default' => 'private',
 
     /*
     |--------------------------------------------------------------------------
@@ -72,9 +72,9 @@ return [
 
         'private' => [
             'method'     => 'private',
-            'appId'      => 'your-github-app-id',
-            'keyPath'    => 'your-private-key-path',
-            // 'key'        => 'your-private-key-content',
+            'appId'      => env('GITHUB_APP_ID'),
+            // 'keyPath'    => 'your-private-key-path',
+            'key'        => env('GITHUB_KEY'),
             // 'passphrase' => 'your-private-key-passphrase'
             // 'backoff'    => false,
             // 'cache'      => false,
