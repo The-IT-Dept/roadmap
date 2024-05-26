@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.11](https://github.com/The-IT-Dept/roadmap/compare/v0.0.10...v0.0.11) (2024-05-26)
+
+
+### Bug Fixes
+
+* admin edit items ([3650604](https://github.com/The-IT-Dept/roadmap/commit/36506047b6a110f7e5a8af199bf91be0d601c715))
+* Update User.php ([3ce0cd8](https://github.com/The-IT-Dept/roadmap/commit/3ce0cd8667d30146a4b6d34b6e6e64fe38535f59))
+
 ## [0.0.10](https://github.com/The-IT-Dept/roadmap/compare/v0.0.9...v0.0.10) (2024-05-26)
 
 
