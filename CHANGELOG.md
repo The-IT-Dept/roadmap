@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.5](https://github.com/The-IT-Dept/roadmap/compare/v0.0.4...v0.0.5) (2024-05-26)
+
+
+### Bug Fixes
+
+* hosts and proxies ([a0db2f2](https://github.com/The-IT-Dept/roadmap/commit/a0db2f2041bab594e4fd9c65136a09d6f9606c92))
+
 ## [0.0.4](https://github.com/The-IT-Dept/roadmap/compare/v0.0.3...v0.0.4) (2024-05-26)
 
 
