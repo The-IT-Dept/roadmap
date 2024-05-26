@@ -2,8 +2,9 @@ name: Build Roadmap
 
 on:
   workflow_dispatch:
-  release:
-    types: [ published ]
+  push:
+    tags:
+      - 'v*.*.*'
 
 permissions:
   contents: read
@@ -11,7 +12,7 @@ permissions:
   actions: write
 
 concurrency:
-  group: roadmap-build-${{ github.ref }}
+  group: tilly-and-milly-back-office-${{ github.ref }}
   cancel-in-progress: true
 
 env:
@@ -19,7 +20,7 @@ env:
 
 jobs:
   build:
-    name: Build Roadmap
+    name: Build Tilly & Milly Back Office
     runs-on: ubuntu-latest
 
     steps:
@@ -30,6 +31,16 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.3
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'yarn'
 
       - name: Extract metadata for the Docker image
         id: meta
@@ -44,13 +55,14 @@ jobs:
       - name: Cache composer dependencies
         uses: actions/cache@v3
         with:
-          path: ${{ steps.composer-cache.outputs.dir }}}
+          path: ${{ steps.composer-cache.outputs.dir }}
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: ${{ runner.os }}-composer-
 
       - name: Install Composer dependencies
         run: composer install --no-progress --prefer-dist --optimize-autoloader --ignore-platform-reqs
         env:
+          COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
           APP_ENV: production
 
       - name: Install Yarn dependencies
@@ -59,11 +71,11 @@ jobs:
       - name: Build JS and CSS
         run: yarn build
 
-      - name: Build and push Docker image
+      - name: Build and push by digest
+        id: build
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./Dockerfile
           push: true
           labels: ${{ steps.meta.outputs.labels }}
           tags: ${{ steps.meta.outputs.tags }}
