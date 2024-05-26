@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.12](https://github.com/The-IT-Dept/roadmap/compare/v0.0.11...v0.0.12) (2024-05-26)
+
+
+### Bug Fixes
+
+* json columns ([e4c8f2a](https://github.com/The-IT-Dept/roadmap/commit/e4c8f2a33684dfff61071c5eb1023d567f25cb22))
+
 ## [0.0.11](https://github.com/The-IT-Dept/roadmap/compare/v0.0.10...v0.0.11) (2024-05-26)
 
 
