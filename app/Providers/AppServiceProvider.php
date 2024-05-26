@@ -6,6 +6,7 @@ use App\Http\Kernel;
 use App\Services\OgImageGenerator;
 use Illuminate\Support\Collection;
 use App\SocialProviders\SsoProvider;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Socialite\Contracts\Factory as SocialiteFactory;
@@ -14,6 +15,9 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot(Kernel $kernel): void
     {
+        URL::forceScheme('https');
+
+
         View::composer('partials.meta', static function ($view) {
             $view->with(
                 'defaultImage',
