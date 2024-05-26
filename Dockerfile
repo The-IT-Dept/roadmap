@@ -4,6 +4,13 @@ FROM ghcr.io/iaa-inc/frankenphp:v1.0.2
 COPY artisan /app/artisan
 
 COPY public /app/public
+COPY public/build /app/public/build
+COPY public/css /app/public/css
+COPY public/fonts /app/public/fonts
+COPY public/images /app/public/images
+COPY public/js /app/public/js
+COPY public/screenshots /app/public/screenshots
+
 COPY lang /app/lang
 COPY bootstrap/app.php /app/bootstrap/app.php
 COPY routes /app/routes
