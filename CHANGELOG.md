@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.6](https://github.com/The-IT-Dept/roadmap/compare/v0.0.5...v0.0.6) (2024-05-26)
+
+
+### Bug Fixes
+
+* remove roadrunner packages ([fa1fa97](https://github.com/The-IT-Dept/roadmap/commit/fa1fa973bae3642fcaf0cfe5e24d0267108f742c))
+
 ## [0.0.5](https://github.com/The-IT-Dept/roadmap/compare/v0.0.4...v0.0.5) (2024-05-26)
 
 
