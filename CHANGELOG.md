@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.3](https://github.com/The-IT-Dept/roadmap/compare/v0.0.2...v0.0.3) (2024-05-26)
+
+
+### Bug Fixes
+
+* build ([08bb2d0](https://github.com/The-IT-Dept/roadmap/commit/08bb2d05d53cc14110e5abca7e6683e8fc87e0b6))
+
 ## [0.0.2](https://github.com/The-IT-Dept/roadmap/compare/v0.0.1...v0.0.2) (2024-05-26)
 
 
