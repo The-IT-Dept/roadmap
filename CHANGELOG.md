@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.4](https://github.com/The-IT-Dept/roadmap/compare/v0.0.3...v0.0.4) (2024-05-26)
+
+
+### Miscellaneous Chores
+
+* fix action name ([76e168b](https://github.com/The-IT-Dept/roadmap/commit/76e168b67d43d83b0cd3634b662489fc2ebc9255))
+* lockfiles ([94c713f](https://github.com/The-IT-Dept/roadmap/commit/94c713f5a3f45e31f7712d6bd19084d4232c829b))
+
 ## [0.0.3](https://github.com/The-IT-Dept/roadmap/compare/v0.0.2...v0.0.3) (2024-05-26)
 
 
