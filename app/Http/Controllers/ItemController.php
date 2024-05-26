@@ -56,9 +56,9 @@ class ItemController extends Controller
         ]);
     }
 
-    public function edit($id)
+    public function edit(Item $item)
     {
-        $item = auth()->user()->items()->findOrFail($id);
+        $item = auth()->user()->items()->findOrFail($item->id);
 
         return view('edit-item', [
             'item' => $item
