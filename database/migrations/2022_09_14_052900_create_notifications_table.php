@@ -17,7 +17,7 @@ return new class extends Migration {
             $table->string('type');
             $table->morphs('notifiable');
             if (config('database.default') === 'pgsql') {
-                $table->json('data');
+                $table->jsonb('data');
             } else {
                 $table->text('data');
             }

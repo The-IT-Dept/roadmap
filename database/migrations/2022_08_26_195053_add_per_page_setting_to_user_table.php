@@ -13,7 +13,7 @@ return new class extends Migration {
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->json('per_page_setting')->nullable()->after('notification_settings');
+            $table->jsonb('per_page_setting')->nullable()->after('notification_settings');
         });
     }
 

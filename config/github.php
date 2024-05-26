@@ -26,7 +26,7 @@ return [
 
     'enabled' => env('GITHUB_ENABLED', false),
 
-    'default' => 'private',
+    'default' => 'main',
 
     /*
     |--------------------------------------------------------------------------
