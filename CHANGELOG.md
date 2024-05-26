@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.9](https://github.com/The-IT-Dept/roadmap/compare/v0.0.8...v0.0.9) (2024-05-26)
+
+
+### Bug Fixes
+
+* disable user registration email ([0c6fafe](https://github.com/The-IT-Dept/roadmap/commit/0c6fafee093e93ccaad03a7a86dea9a4143883ef))
+
 ## [0.0.8](https://github.com/The-IT-Dept/roadmap/compare/v0.0.7...v0.0.8) (2024-05-26)
 
 
