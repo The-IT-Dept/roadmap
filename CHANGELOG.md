@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.8](https://github.com/The-IT-Dept/roadmap/compare/v0.0.7...v0.0.8) (2024-05-26)
+
+
+### Miscellaneous Chores
+
+* public ([d5c382f](https://github.com/The-IT-Dept/roadmap/commit/d5c382f9033121837a4e5d8d13860253d7b99dac))
+
 ## [0.0.7](https://github.com/The-IT-Dept/roadmap/compare/v0.0.6...v0.0.7) (2024-05-26)
 
 
